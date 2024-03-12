@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title>Pokemon Search</title>
+    <meta charset='utf-8' />
+    <meta name='viewport' content='width=device-wdith, initial-scale=1.0' />
+    <link rel='stylesheet' href='styles.css' />
+  </head>
+  <body>
+    <div id='container'>
+      <div id='pokedex-bezel'>
+        <div id='pokedex-screen'>
+          <div id='picture-name-display'>
+            <div id='name-id'>
+              <div id='pokemon-name'></div>
+              <div id='pokemon-id'></div>
+            </div>
+            <div id='pokemon-size'>
+              <div id='weight'></div>
+              <div id='height'></div>
+            </div>
+            <div id='pokemon-sprite'>
+            </div>
+          </div>
+          <div id='stats-display'>
+            <table id='stats-table'>
+              <tr class='base-stat'>
+                <td><strong>Base</strong></td>
+                <td><strong>Stat</strong></td>
+              </tr>
+              <tr class='stat-row'>
+                <td>Hp</td>
+                <td id='hp'></td>
+              </tr>
+              <tr class='stat-row'>
+                <td>Attack</td>
+                <td id='attack'></td>
+              </tr>
+              <tr class='stat-row'>
+                <td>Defense</td>
+                <td id='defense'></td>
+              </tr>
+              <tr class='stat-row'>
+                <td>Special Attack</td>
+                <td id='special-attack'></td>
+              </tr>
+              <tr class='stat-row'>
+                <td>Special Defense</td>
+                <td id='special-defense'></td>
+              </tr>
+              <tr class='stat-row'>
+                <td>Speed</td>
+                <td id='speed'></td>
+              </tr>
+            </table>
+            <div id='types'></div>
+          </div>
+        </div>
+        <div id='pokedex-bottom'>
+          <div id='red-circle'>
+          </div>
+          <div id='speaker-container' >
+            <div class='speaker-line'></div>
+            <div class='speaker-line'></div>
+            <div class='speaker-line'></div>
+            <div class='speaker-line'></div>
+            <div class='speaker-line'></div>
+          </div>
+        </div>
+      </div>
+      <div id='buttons-container' >
+        <form id='search-form'>
+          <label for='search-input'>Search a Pokemon by name or number</label>
+          <input type='text' id='search-input' name='search-input' required />
+          <button id='search-button' type='submit'>Search</button>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script src='script.js'></script>
+</html>
